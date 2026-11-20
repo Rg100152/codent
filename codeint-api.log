@@ -1,0 +1,21 @@
+[codeint] upstream: http://127.0.0.1:49374 — 13 chat models
+[codeint] ready at http://127.0.0.1:10000/v1  (mode: text)
+[codeint] default model: opencode/tidepool-alpha-free
+[error] POST /v1/chat/completions: Error: Free usage limit reached. Free models work in OpenCode (https://opencode.ai); subscribe to OpenCode Go to keep going: https://opencode.ai/go
+    at upstreamError (file:///home/raj/Desktop/raj/codeint/server.mjs:207:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async generateText (file:///home/raj/Desktop/raj/codeint/server.mjs:426:27)
+    at async handleChat (file:///home/raj/Desktop/raj/codeint/server.mjs:741:16)
+    at async Server.<anonymous> (file:///home/raj/Desktop/raj/codeint/server.mjs:1017:75)
+[codeint] upstream: http://127.0.0.1:49374 — 13 chat models
+[codeint] ready at http://127.0.0.1:10000/v1  (mode: text)
+[codeint] default model: opencode/tidepool-alpha-free
+[error] POST /v1/chat/completions: Error: Free usage limit reached. Free models work in OpenCode (https://opencode.ai); subscribe to OpenCode Go to keep going: https://opencode.ai/go (retry after 29273s)
+    at upstreamError (file:///home/raj/Desktop/raj/codeint/server.mjs:212:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async generateText (file:///home/raj/Desktop/raj/codeint/server.mjs:443:27)
+    at async handleChat (file:///home/raj/Desktop/raj/codeint/server.mjs:758:16)
+    at async Server.<anonymous> (file:///home/raj/Desktop/raj/codeint/server.mjs:1034:75)
+[codeint] upstream: http://127.0.0.1:49374 — 13 chat models
+[codeint] ready at http://127.0.0.1:10000/v1  (mode: text)
+[codeint] default model: opencode/tidepool-alpha-free

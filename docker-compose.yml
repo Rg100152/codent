@@ -1,0 +1,19 @@
+services:
+  codeint-api:
+    build: .
+    # OpenCode V2 apna HTTP service sirf 127.0.0.1 par listen karta hai.
+    # Isliye bridge network se container us tak nahi pahunch sakta; host network zaroori hai (Linux).
+    network_mode: host
+    environment:
+      HOST: 0.0.0.0
+      PORT: ${PORT:-10000}
+      API_KEY: ${API_KEY:?Set API_KEY in .env}
+      OPENCODE_BASE_URL: ${OPENCODE_BASE_URL:-http://127.0.0.1:49374}
+      OPENCODE_PASSWORD: ${OPENCODE_PASSWORD:-}
+      OPENCODE_USERNAME: ${OPENCODE_USERNAME:-opencode}
+      OPENCODE_AGENT: ${OPENCODE_AGENT:-plan}
+      OPENCODE_LOCATION: ${OPENCODE_LOCATION:-}
+      OPENCODE_TIMEOUT_MS: ${OPENCODE_TIMEOUT_MS:-600000}
+      STREAM_MODE: ${STREAM_MODE:-text}
+      MODEL_PREFIX: ${MODEL_PREFIX:-opencode/}
+      DEFAULT_MODEL: ${DEFAULT_MODEL:-}
